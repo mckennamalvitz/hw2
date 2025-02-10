@@ -323,7 +323,6 @@ puts ""
 role = Role.all
 
 for each in role
-    
     movie = Movie.find_by("id" => each["movie_id"])
     movie_title = movie ["title"]
     actor = Actor.find_by("id" => each["actor_id"])
